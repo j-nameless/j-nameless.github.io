@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
+  <entry>
+    <title><![CDATA[关于Java只有值传递]]></title>
+    <url>%2F2019%2F07%2F28%2Fjava-valuePropagation%2F</url>
+    <content type="text"><![CDATA[为什么Java只有值传递关于值传递和引用传递的概念：按值调用(call by value)表示方法接收的是调用者提供的值，而按引用调用（call by reference)表示方法接收的是调用者提供的变量地址。一个方法可以修改传递引用所对应的变量值，而不能修改传递值调用所对应的变量值 Java总是按值传递：方法得到的是所有参数值的一个拷贝，也就是说，方法不能修改传递给它的任何参数变量的内容 如下列栗子： 12345678910111213141516171819public class Test &#123; public static void main(String[] args) &#123; // TODO Auto-generated method stub Student s1 = new Student("小张"); Student s2 = new Student("小李"); Test.swap(s1, s2); System.out.println("s1:" + s1.getName()); System.out.println("s2:" + s2.getName()); &#125; public static void swap(Student x, Student y) &#123; Student temp = x; x = y; y = temp; System.out.println("x:" + x.getName()); System.out.println("y:" + y.getName()); &#125;&#125; 输出是： 12345x:小李y:小张s1:小张s2:小李说明在swap方法里x和y的交换没有影响到原s1和s2对象]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
 </search>

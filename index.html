@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang>
+<html class="theme-next pisces use-motion" lang>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -91,7 +91,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"always","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
@@ -290,7 +290,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/08/The first blog/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/28/java-valuePropagation/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.C">
@@ -309,7 +309,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/07/08/The first blog/" itemprop="url">解决使用gitment无法登陆，链接跨域</a></h1>
+                <a class="post-title-link" href="/2019/07/28/java-valuePropagation/" itemprop="url">关于Java只有值传递</a></h1>
         
 
         <div class="post-meta">
@@ -321,8 +321,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-08T10:27:15+08:00">
-                2019-07-08
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-28T22:03:14+08:00">
+                2019-07-28
               </time>
             
 
@@ -344,8 +344,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
                   </a>
                 </span>
 
@@ -382,17 +382,18 @@
 
       
         
-          <h1 id="gitment"><a href="#gitment" class="headerlink" title="gitment"></a>gitment</h1><p>gitment的作者服务器安全证书过期了，
+          <h2 id="为什么Java只有值传递"><a href="#为什么Java只有值传递" class="headerlink" title="为什么Java只有值传递"></a>为什么Java只有值传递</h2><p>关于值传递和引用传递的概念：<strong>按值调用(call by value)表示方法接收的是调用者提供的值，而按引用调用（call by reference)表示方法接收的是调用者提供的变量地址。一个方法可以修改传递引用所对应的变量值，而不能修改传递值调用所对应的变量值</strong></p>
+<p><strong>Java总是按值传递：方法得到的是所有参数值的一个拷贝，也就是说，方法不能修改传递给它的任何参数变量的内容</strong></p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/07/08/The first blog/#more" rel="contents">
+            <a class="btn" href="/2019/07/28/java-valuePropagation/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
           <!--/noindex-->
         
       
-    </p></div>
+    </div>
     
     
     
